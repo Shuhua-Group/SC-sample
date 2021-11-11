@@ -1,12 +1,6 @@
 # SC-sample
 SC-sample is a computer simulation tool for modeling spatial coalescent with recombination process, which generates ARGs directly consistent with the given sample. It attempts to uniformly select ARG from the sample-consistent ARG space. The algorithm is modified version of SC. 
 
------------Related Publication: BMC Bioinformatics. 15:273. 
-
-Link:http://www.biomedcentral.com/1471-2105/15/273
-
-Author: Ying Wang1, Ying Zhou, Linfeng Li, Xian Chen, Yuting Liu, Zhi-Ming Ma and Shuhua Xu
-
 sc-sample is implemented based on Macs-0.4e source code, thanks Gary.Chen to provide support.
 sc-sample is used to generate ARG which is consistent with given sample. 
 Below command will generate 100 ARGs matching given sample :
@@ -14,12 +8,11 @@ Below command will generate 100 ARGs matching given sample :
 ./sc-sample 20 1000 -r 0.015 -h 1000 -T -f example/sample_10_10.0 -i 100 1>stdout 2>stderr
 ```
 
-Below are README of Macs 0.4e
------------------------------------------------------------------
+**Below are README of Macs 0.4e**
 
 
-Introduction
-------------
+
+# Introduction
 
 MaCS is a simulator of the coalescent process that simulates geneologies spatially across chromosomes as a Markovian process.  The algorithm is similar to the Wiuf and Hein algorithm (Wiuf and Hein, 1999) in that an ancestral recombination graph (ARG) is stored in memory.  Where the algorithm deviates from the Wiuf and Hein are the following:
 
@@ -76,3 +69,9 @@ For very large sample sizes and/or sequence lengths, we recommend storing output
 ```
 For comments or questions, please contact me at gary.k.chen@usc.edu
 
+# Citation
+If you use ```SC-sample``` in your research, please cite
+
+Wang Y, Zhou Y, Li L, Chen X, Liu Y, Ma ZM, Xu S. A new method for modeling coalescent processes with recombination. BMC Bioinformatics. 2014 Aug 11;15(1):273. doi: 10.1186/1471-2105-15-273. PMID: 25113665; PMCID: PMC4137079.
+
+(Link: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-15-273)
